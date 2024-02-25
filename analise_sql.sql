@@ -153,7 +153,7 @@ INNER JOIN chamados_evento
 UNION ALL
 
 SELECT
-    'Média anual' AS descricao 
+    'Ano 2022 e 2023' AS descricao 
   , ROUND(COUNT(*)/DATE_DIFF('2024-01-01', '2022-01-01', DAY), 2)
 FROM datario.administracao_servicos_publicos.chamado_1746
 WHERE data_inicio BETWEEN '2022-01-01T00:00:00' AND '2023-12-31T23:59:59'
